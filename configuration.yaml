@@ -66,13 +66,19 @@ envisalink:
   keepalive_interval: 60
   zonedump_interval: 30
   #panic_type: Police
-  #zones:
-   # 11:
-    #  name: 'Back Door'
-     # type: 'opening'
-    #21:
-     # name: 'First Floor Motion'
-      #type: 'motion'
+  zones:
+    01:
+      name: 'Garage Door'
+      type: 'opening'
+    02:
+      name: 'Back Door'
+      type: 'opening'
+    03:
+      name: 'Front Door'
+      type: 'opening'
+    04:
+      name: 'Kitchen Door'
+      type: 'opening'
  # partitions:
   #  1:
    #   name: 'Home'    
