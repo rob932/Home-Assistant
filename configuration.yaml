@@ -79,6 +79,6 @@ envisalink:
     04:
       name: 'Kitchen Door'
       type: 'opening'
- # partitions:
-  #  1:
-   #   name: 'Home'    
+  partitions:
+    1:
+      name: 'Home'    
