@@ -18,10 +18,10 @@ homeassistant:
 frontend:
 
 http:
-  # Uncomment this to add a password (recommended!)
-  # api_password: PASSWORD
+  #Uncomment this to add a password (recommended!)
+  api_password: !secret api_pass
   # Uncomment this if you are using SSL or running in Docker etc
-  # base_url: example.duckdns.org:8123
+  base_url: dhass.duckdns.org:443
 
 # Checks for available updates
 updater:
