@@ -1,0 +1,58 @@
+
+   #Alarm 
+    alarm_control_panel.home:
+      friendly_name: Alarm
+    sensor.home_keypad:
+      hidden: true
+    
+    #HVAC
+    climate.home:
+      friendly_name: Ecobee
+      hidden: true
+    sensor.master_bedroom_temperature:
+      hidden: true
+      
+    switch.christmas_tree:
+      hidden: true
+    switch.outlet_1:
+      hidden: true
+      
+    #Wink
+    binary_sensor.hub_hub:
+      friendly_name: Wink
+      hidden: true
+      
+    #Hue
+    binary_sensor.philips_hue_hub:
+      friendly_name: Hue
+      hidden: true
+  
+      
+    sensor.dark_sky_cloud_coverage:
+      friendly_name: 'Dark Sky Cloud Coverage'
+      hidden: False
+      icon: mdi:weather-partlycloudy
+
+
+    sensor.dark_sky_humidity:
+      friendly_name: 'Outdoor Humidity'
+      hidden: False
+      icon: mdi:water-percent
+
+
+    sensor.dark_sky_minutely_summary:
+      friendly_name: 'Current Conditions'
+      hidden: False
+      icon: mdi:beach
+
+
+    sensor.dark_sky_precip_intensity:
+      friendly_name: 'Rainfall'
+      hidden: False
+      icon: mdi:weather-rainy
+
+
+    sensor.dark_sky_temperature:
+      friendly_name: 'Outdoor Temp'
+      hidden: False
+      icon: mdi:thermometer
