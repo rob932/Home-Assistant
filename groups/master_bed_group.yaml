@@ -1,0 +1,5 @@
+name: "Bedroom"
+entities:  
+  - sensor.master_bedroom_temperature
+  - light.bedroom_lamp
+  - switch.under_bed_lights

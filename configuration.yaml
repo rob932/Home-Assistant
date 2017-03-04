@@ -12,9 +12,6 @@ homeassistant:
   time_zone: America/Chicago
   customize: !include_dir_merge_named customize
 
-# Show links to resources in log and frontend
-#introduction:
-
 # Enables the frontend
 frontend:
 
@@ -45,8 +42,6 @@ logbook:
 
 # Track the sun
 sun:
-
-
 
 # Text to speech
 tts:
@@ -86,4 +81,6 @@ envisalink:
     1:
       name: 'Home'   
 
-sensor: !include_dir_merge_list sensors      
+group: !include_dir_named groups
+sensor: !include_dir_merge_list sensors/    
+
