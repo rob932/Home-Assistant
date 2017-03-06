@@ -1,0 +1,9 @@
+- platform: darksky
+  api_key: !secret forecast_key
+  monitored_conditions:
+    - apparent_temperature
+    - apparent_temperature_max
+    - apparent_temperature_min
+    - cloud_cover
+    - humidity
+    - wind_speed

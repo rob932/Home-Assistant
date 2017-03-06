@@ -1,0 +1,6 @@
+name: "Living Room"
+entities:  
+  - sensor.downstairs_temperature
+  - light.living_room_lamp
+  - light.livingcolors_1
+  - light.livingcolors_2

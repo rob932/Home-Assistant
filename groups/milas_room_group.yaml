@@ -1,0 +1,5 @@
+name: "Mila's Room"
+entities:
+  - sensor.milas_room_temperature  
+  - light.milas_room
+  - light.milas_lamp

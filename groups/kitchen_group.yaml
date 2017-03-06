@@ -1,0 +1,5 @@
+name: "Kitchen"
+entities:
+  - sensor.kitchen_temperature
+  - light.front_room_lamp
+  - light.kitchen_sink

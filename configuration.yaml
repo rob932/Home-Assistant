@@ -2,8 +2,8 @@ homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
   # Location required to calculate the time the sun rises and sets
-  latitude: 39.2116
-  longitude: -94.5739
+  latitude: !secret location_lat
+  longitude: !secret location_long
   # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: 307
   # metric for Metric, imperial for Imperial
@@ -11,9 +11,6 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Chicago
   customize: !include_dir_merge_named customize
-
-# Show links to resources in log and frontend
-#introduction:
 
 # Enables the frontend
 frontend:
@@ -45,8 +42,6 @@ logbook:
 
 # Track the sun
 sun:
-
-
 
 # Text to speech
 tts:
@@ -86,4 +81,6 @@ envisalink:
     1:
       name: 'Home'   
 
-sensor: !include_dir_merge_list sensors      
+group: !include_dir_named groups
+sensor: !include_dir_merge_list sensors/    
+
