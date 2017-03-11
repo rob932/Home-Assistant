@@ -38,6 +38,7 @@ binary_sensor.philips_hue_hub:
 #Dark Sky  
 sensor.dark_sky_apparent_temperature:
   friendly_name: "Real Feel"
+  hidden: true
 sensor.dark_sky_daily_low_apparent_temperature:
   friendly_name: "Real Feel Minimum"
   hidden: true
