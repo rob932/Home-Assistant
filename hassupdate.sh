@@ -2,8 +2,8 @@
 
 #!/bin/bash
 
-cd /home/hass/.homeassistant
-source /srv/hass/hass_venv/bin/activate
+sudo su -s /bin/bash homeassistant
+source /srv/homeassistant/bin/activate
 
 echo "Processing update"
 pip3 install --upgrade homeassistant
