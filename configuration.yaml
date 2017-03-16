@@ -1,7 +1,7 @@
 homeassistant:
   # Name of the location where Home Assistant is running
   name: Home
-  # Location required to calculate the time the sun rises and sets
+   #Location required to calculate the time the sun rises and sets
   latitude: !secret location_lat
   longitude: !secret location_long
   # Impacts weather/sunrise data (altitude above sea level in meters)
@@ -82,5 +82,6 @@ envisalink:
       name: 'Home'   
 
 group: !include_dir_named groups
-sensor: !include_dir_merge_list sensors/    
+sensor: !include_dir_merge_list sensors/   
+automation: !include_dir_merge_list automation 
 

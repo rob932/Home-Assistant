@@ -1,0 +1,11 @@
+
+- alias: 'alarm trigger lights'
+  trigger: 
+    - platform: state
+      entity_id: sensor.home_keypad
+      state: alarm:true
+
+  action:
+    - service: light.turn_on
+      entity_id: group.all_lights
+    
